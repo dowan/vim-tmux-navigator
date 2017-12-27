@@ -114,9 +114,9 @@ function! s:VimNavigate(direction)
 endfunction
 
 command! TmuxNavigateLeft call s:TmuxWinCmd('h')
-command! TmuxNavigateDown call s:TmuxWinCmd('j')
-command! TmuxNavigateUp call s:TmuxWinCmd('k')
-command! TmuxNavigateRight call s:TmuxWinCmd('l')
+command! TmuxNavigateDown call s:TmuxWinCmd('t')
+command! TmuxNavigateUp call s:TmuxWinCmd('c')
+command! TmuxNavigateRight call s:TmuxWinCmd('n')
 command! TmuxNavigatePrevious call s:TmuxWinCmd('p')
 
 if s:UseTmuxNavigatorMappings()
